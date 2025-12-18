@@ -597,15 +597,111 @@ s = set(l)       # {1, 2, 3}
 <p><strong>Example:</strong> 5 >> 1</p>
 <p>Binary: 5 → 101 → Shift right → 10 → Result: 2</p>
 
- 
+<h2>Python Libraries</h2>
 
- 
+<p>A <strong>library</strong> is a collection of modules, and a <strong>module</strong> is a file containing Python definitions and functions. Libraries help you perform specific tasks without writing code from scratch.</p>
+
+<h3>Common Python Libraries</h3>
+<ul>
+  <li><strong>math</strong> – Mathematical operations  
+    <br>Example: <code>import math</code>  
+    <code>math.sqrt(16) → 4.0</code>
+  </li>
+  <li><strong>random</strong> – Random number generation  
+    <br>Example: <code>import random</code>  
+    <code>random.randint(1,10) → 5</code>
+  </li>
+  <li><strong>datetime</strong> – Date & time manipulation  
+    <br>Example: <code>import datetime</code>  
+    <code>datetime.datetime.now()</code>
+  </li>
+  <li><strong>os</strong> – Operating system operations  
+    <br>Example: <code>import os</code>  
+    <code>os.getcwd() → current directory</code>
+  </li>
+  <li><strong>sys</strong> – System-specific parameters  
+    <br>Example: <code>import sys</code>  
+    <code>sys.version → Python version</code>
+  </li>
+  <li><strong>json</strong> – JSON handling  
+    <br>Example: <code>import json</code>  
+    <code>json.loads('{"a":1}') → {'a':1}</code>
+  </li>
+  <li><strong>re</strong> – Regular expressions  
+    <br>Example: <code>import re</code>  
+    <code>re.findall(r'\d+', 'abc123') → ['123']</code>
+  </li>
+  <li><strong>statistics</strong> – Statistical calculations  
+    <br>Example: <code>import statistics</code>  
+    <code>statistics.mean([1,2,3]) → 2</code>
+  </li>
+</ul>
+
+<h3>Example: Using the math Library</h3>
+<pre><code>import math
+
+print(math.sqrt(25))     # Square root → 5.0
+print(math.factorial(5)) # Factorial → 120
+print(math.pi)           # Pi value → 3.141592653589793
+</code></pre>
+
+<h2>Built-in Functions in Python</h2>
+
+<p>Built-in functions are functions available by default in Python. You don’t need to import any library to use them.</p>
+
+<h3>Common Built-in Functions</h3>
+<ul>
+  <li><strong>print()</strong> – Print output  
+    <br>Example: <code>print("Hello") → Hello</code>
+  </li>
+  <li><strong>len()</strong> – Length of object  
+    <br>Example: <code>len([1,2,3]) → 3</code>
+  </li>
+  <li><strong>type()</strong> – Type of object  
+    <br>Example: <code>type(5) → &lt;class 'int'&gt;</code>
+  </li>
+  <li><strong>int(), float(), str()</strong> – Type conversion  
+    <br>Example: <code>int("5") → 5</code>
+  </li>
+  <li><strong>sum()</strong> – Sum of iterable  
+    <br>Example: <code>sum([1,2,3]) → 6</code>
+  </li>
+  <li><strong>max(), min()</strong> – Maximum & minimum value  
+    <br>Example: <code>max([1,2,3]) → 3, min([1,2,3]) → 1</code>
+  </li>
+  <li><strong>sorted()</strong> – Sorted list  
+    <br>Example: <code>sorted([3,1,2]) → [1,2,3]</code>
+  </li>
+  <li><strong>abs()</strong> – Absolute value  
+    <br>Example: <code>abs(-5) → 5</code>
+  </li>
+  <li><strong>round()</strong> – Round number  
+    <br>Example: <code>round(3.14159,2) → 3.14</code>
+  </li>
+  <li><strong>input()</strong> – User input  
+    <br>Example: <code>input("Enter: ")</code>
+  </li>
+</ul>
+
+<h3>Example: Built-in Functions</h3>
+<pre><code>numbers = [10, 20, 30]
+
+print(len(numbers))       # 3
+print(sum(numbers))       # 60
+print(max(numbers))       # 30
+print(min(numbers))       # 10
+print(sorted(numbers))    # [10, 20, 30]
+print(abs(-50))           # 50
+</code></pre>
+
+   
 
 
 
-</body>
+
+
+</body>     
 <hr>
-
 <h2>👨‍💻 Author</h2>
 
 <p><strong>Chaithanya Gollapalli</strong><br>
