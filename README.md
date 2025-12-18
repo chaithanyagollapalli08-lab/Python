@@ -1,7 +1,7 @@
 # Welcome to Python Programming!
 
 Welcome to my Python learning repository!  
-This repository contains notes and examples to help you understand Python programming from basics to advanced topics.  
+This repository contains each topic notes and examples to help you understand Python programming from basics to advanced topics.  
 Here, you'll learn Python step by step, from basics to advanced concepts.
 
 ---
