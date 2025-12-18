@@ -14,6 +14,7 @@ Here, you'll learn Python step by step, from basics to advanced concepts.
     <li><strong>Installation of Python</strong> – Learn what Python is and why it’s popular.</li>
     <li><strong>Introduction to Python</strong> – How to install Python on Windows, macOS, or Linux.</li>
     <li><strong>Comments</strong> - Lines that explain the code and are ignored by Python. </li>
+     <li><strong>Print Statement</strong> -used to display output on the screen </li>
     <li><strong>Variables</strong> – Store and manipulate data.</li>
     <li><strong>Data Types</strong> – <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>, etc.</li>
     <li><strong>Type Conversion</strong> – Convert between different data types.</li>
@@ -132,6 +133,74 @@ Useful for explaining code blocks.
 print("Python comments example")
 </code>
 </pre>
+
+<h2>Print Statement in Python</h2>
+
+<h3>1. Basic print()</h3>
+<p><strong>Purpose:</strong> To display any message or text on the screen.</p>
+<p><strong>Example:</strong><br>
+<code>print("Hello Python")</code></p>
+
+<hr>
+
+<h3>2. Printing Numbers</h3>
+<p><strong>Purpose:</strong> To show numeric values or results of calculations.</p>
+<p><strong>Example:</strong><br>
+<code>print(10 + 20)</code></p>
+
+<hr>
+
+<h3>3. Printing Multiple Values</h3>
+<p><strong>Purpose:</strong> To print different items in one line separated by space (default).</p>
+<p><strong>Example:</strong><br>
+<code>print("Age:", 20)</code></p>
+
+<hr>
+
+<h3>4. Using <code>sep</code> (Separator)</h3>
+<p><strong>Purpose:</strong> To change the separator between printed values. Default is a space.</p>
+<p><strong>Example:</strong><br>
+<code>print(1, 2, 3, sep="-")</code></p>
+
+<hr>
+
+<h3>5. Using <code>end</code> (Ending Character)</h3>
+<p><strong>Purpose:</strong> To change what happens at the end of a print statement. Default is a new line.</p>
+<p><strong>Example:</strong><br>
+<code>
+print("Hello", end=" ")<br>
+print("World")
+</code></p>
+
+<hr>
+
+<h3>6. Printing Variables</h3>
+<p><strong>Purpose:</strong> To display the values stored inside variables.</p>
+<p><strong>Example:</strong><br>
+<code>
+name = "C"<br>
+print(name)
+</code></p>
+
+<hr>
+
+<h3>7. f-Strings</h3>
+<p><strong>Purpose:</strong> To format strings easily and include variables inside text.</p>
+<p><strong>Example:</strong><br>
+<code>
+name = "C"<br>
+print(f"My name is {name}")
+</code></p>
+
+<hr>
+
+<h3>8. Escape Characters</h3>
+<p><strong>Purpose:</strong> To format text with special characters like new line, tab, etc.</p>
+<p><strong>Examples:</strong><br>
+<code>
+print("Hello\nPython")  &nbsp;&nbsp;# New line <br>
+print("Hello\tPython")  &nbsp;&nbsp;# Tab space
+</code></p>
 
 
 <h2>Variables in Python</h2>
@@ -535,3 +604,12 @@ s = set(l)       # {1, 2, 3}
 
 
 </body>
+<hr>
+
+<h2>👨‍💻 Author</h2>
+
+<p><strong>Chaithanya Gollapalli</strong><br>
+Maintains this repository as part of continuous Python development practice.<br>
+📧 <strong>Email:</strong> chaithanyagollapalli08@gmail.com
+</p>
+
