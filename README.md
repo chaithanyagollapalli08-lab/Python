@@ -17,6 +17,7 @@ Here, you'll learn Python step by step, from basics to advanced concepts.
     <li><strong>Variables</strong> – Store and manipulate data.</li>
     <li><strong>Data Types</strong> – <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>, etc.</li>
     <li><strong>Type Conversion</strong> – Convert between different data types.</li>
+    <li><strong>Operators</strong> – Symbols that perform operations on variables and values</li>
     <li><strong>Print Statement</strong> – Display output using <code>print()</code>.</li>
     <li><strong>Libraries</strong> – Introduction to Python libraries.</li>
     <li><strong>Built-in Functions</strong> – Explore Python’s built-in functions.</li>
@@ -375,6 +376,162 @@ print(bool([]))     # False
         <td>Immutable set</td>
     </tr>
 </table>
+
+<h2>Type Conversion in Python</h2>
+
+<p>Type conversion (or typecasting) is the process of converting a variable from one data type to another.</p>
+
+<h3>1️⃣ Implicit Type Conversion</h3>
+<p>Python automatically converts one data type to another without user input when needed.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre>
+<code>x = 5       # int
+y = 2.5     # float
+
+z = x + y   # int is converted to float automatically
+print(z)    # 7.5
+print(type(z))  # &lt;class 'float'&gt;
+</code>
+</pre>
+
+<p>Python converts “lower” types to “higher” types to prevent data loss: <code>int → float → complex</code>.</p>
+
+<h3>2️⃣ Explicit Type Conversion</h3>
+<p>You manually convert one type to another using built-in functions: <code>int()</code>, <code>float()</code>, <code>str()</code>, <code>bool()</code>, <code>list()</code>, <code>tuple()</code>, <code>set()</code>.</p>
+
+<p><strong>Examples:</strong></p>
+
+<pre>
+<code># Numbers
+x = int(3.9)     # 3
+y = float(5)     # 5.0
+
+# Strings
+z = str(100)     # '100'
+
+# Boolean
+a = bool(0)      # False
+b = bool(42)     # True
+
+# Collections
+t = (1, 2, 3)
+l = list(t)      # [1, 2, 3]
+
+l = [4, 5, 6]
+t = tuple(l)     # (4, 5, 6)
+
+l = [1, 2, 2, 3]
+s = set(l)       # {1, 2, 3}
+</code>
+</pre>
+
+<h2>Python Operators</h2>
+<p> Operators are special symbols in Python used to perform operations on variables and values. Python has several types of operators:</p>
+
+<h3>1️⃣ Arithmetic Operators</h3>
+<p><strong>Purpose:</strong> Perform mathematical operations like addition, subtraction, multiplication, etc.</p>
+<table>
+  <tr><th>Operator</th><th>Purpose</th><th>Example</th><th>Result</th></tr>
+  <tr><td>+</td><td>Add two numbers</td><td>5 + 3</td><td>8</td></tr>
+  <tr><td>-</td><td>Subtract one number from another</td><td>5 - 3</td><td>2</td></tr>
+  <tr><td>*</td><td>Multiply numbers</td><td>5 * 3</td><td>15</td></tr>
+  <tr><td>/</td><td>Divide numbers</td><td>5 / 2</td><td>2.5</td></tr>
+  <tr><td>//</td><td>Floor division (quotient without remainder)</td><td>5 // 2</td><td>2</td></tr>
+  <tr><td>%</td><td>Find remainder</td><td>5 % 2</td><td>1</td></tr>
+  <tr><td>**</td><td>Exponentiation (power)</td><td>5 ** 2</td><td>25</td></tr>
+</table>
+
+<h3>2️⃣ Assignment Operators</h3>
+<p><strong>Purpose:</strong> Assign or update values of variables.</p>
+<table>
+  <tr><th>Operator</th><th>Purpose</th><th>Example</th></tr>
+  <tr><td>=</td><td>Assign value to a variable</td><td>x = 5</td></tr>
+  <tr><td>+=</td><td>Add and assign</td><td>x += 3  (x = x + 3)</td></tr>
+  <tr><td>-=</td><td>Subtract and assign</td><td>x -= 3  (x = x - 3)</td></tr>
+  <tr><td>*=</td><td>Multiply and assign</td><td>x *= 3  (x = x * 3)</td></tr>
+  <tr><td>/=</td><td>Divide and assign</td><td>x /= 3  (x = x / 3)</td></tr>
+  <tr><td>//=</td><td>Floor divide and assign</td><td>x //= 3</td></tr>
+  <tr><td>%=</td><td>Modulus and assign</td><td>x %= 3</td></tr>
+  <tr><td>**=</td><td>Exponentiate and assign</td><td>x **= 3</td></tr>
+</table>
+
+<h3>3️⃣ Comparison Operators</h3>
+<p><strong>Purpose:</strong> Compare values and return <code>True</code> or <code>False</code>.</p>
+<table>
+  <tr><th>Operator</th><th>Purpose</th><th>Example</th><th>Result</th></tr>
+  <tr><td>==</td><td>Check equality</td><td>5 == 3</td><td>False</td></tr>
+  <tr><td>!=</td><td>Check inequality</td><td>5 != 3</td><td>True</td></tr>
+  <tr><td>></td><td>Greater than</td><td>5 > 3</td><td>True</td></tr>
+  <tr><td><</td><td>Less than</td><td>5 < 3</td><td>False</td></tr>
+  <tr><td>>=</td><td>Greater than or equal</td><td>5 >= 5</td><td>True</td></tr>
+  <tr><td><=</td><td>Less than or equal</td><td>5 <= 3</td><td>False</td></tr>
+</table>
+
+<h3>4️⃣ Logical Operators</h3>
+<p><strong>Purpose:</strong> Combine multiple conditions and return Boolean results.</p>
+<table>
+  <tr><th>Operator</th><th>Purpose</th><th>Example</th><th>Result</th></tr>
+  <tr><td>and</td><td>True if both conditions are True</td><td>True and False</td><td>False</td></tr>
+  <tr><td>or</td><td>True if any condition is True</td><td>True or False</td><td>True</td></tr>
+  <tr><td>not</td><td>Reverse Boolean value</td><td>not True</td><td>False</td></tr>
+</table>
+
+<h3>5️⃣ Identity Operators</h3>
+<p><strong>Purpose:</strong> Check if two variables refer to the same object in memory.</p>
+<table>
+  <tr><th>Operator</th><th>Purpose</th><th>Example</th></tr>
+  <tr><td>is</td><td>True if same object</td><td>x is y</td></tr>
+  <tr><td>is not</td><td>True if different object</td><td>x is not y</td></tr>
+</table>
+
+<h3>6️⃣ Membership Operators</h3>
+<p><strong>Purpose:</strong> Test whether a value exists in a sequence (like list, string, tuple).</p>
+<table>
+  <tr><th>Operator</th><th>Purpose</th><th>Example</th></tr>
+  <tr><td>in</td><td>True if value exists</td><td>'a' in 'apple'</td></tr>
+  <tr><td>not in</td><td>True if value does not exist</td><td>'b' not in 'apple'</td></tr>
+</table>
+
+
+<h2>Bitwise Operators in Python</h2>
+<p>Bitwise operators work on the <strong>binary representation</strong> of integers. They are useful for low-level programming, optimization, and certain algorithmic tasks.</p>
+
+<h3>1️⃣ Bitwise AND (&)</h3>
+<p><strong>Purpose:</strong> Result is 1 if both bits are 1, otherwise 0.</p>
+<p><strong>Example:</strong> 5 & 3</p>
+<p>Binary: 5 → 101, 3 → 011 → Result: 001 → 1</p>
+
+<h3>2️⃣ Bitwise OR (|)</h3>
+<p><strong>Purpose:</strong> Result is 1 if at least one bit is 1.</p>
+<p><strong>Example:</strong> 5 | 3</p>
+<p>Binary: 5 → 101, 3 → 011 → Result: 111 → 7</p>
+
+<h3>3️⃣ Bitwise XOR (^)</h3>
+<p><strong>Purpose:</strong> Result is 1 if bits are different, 0 if they are the same.</p>
+<p><strong>Example:</strong> 5 ^ 3</p>
+<p>Binary: 5 → 101, 3 → 011 → Result: 110 → 6</p>
+
+<h3>4️⃣ Bitwise NOT (~)</h3>
+<p><strong>Purpose:</strong> Flips all bits (0 → 1, 1 → 0). In Python, result is -n-1 because of 2's complement.</p>
+<p><strong>Example:</strong> ~5</p>
+<p>Binary: 5 → 00000101 → Result: 11111010 → -6</p>
+
+<h3>5️⃣ Left Shift (<<)</h3>
+<p><strong>Purpose:</strong> Shifts bits to the left, adding 0 on the right. Equivalent to multiplying by 2ⁿ.</p>
+<p><strong>Example:</strong> 5 << 1</p>
+<p>Binary: 5 → 101 → Shift left → 1010 → Result: 10</p>
+
+<h3>6️⃣ Right Shift (>>)</h3>
+<p><strong>Purpose:</strong> Shifts bits to the right. Equivalent to integer division by 2ⁿ.</p>
+<p><strong>Example:</strong> 5 >> 1</p>
+<p>Binary: 5 → 101 → Shift right → 10 → Result: 2</p>
+
+ 
+
+ 
+
 
 
 </body>
