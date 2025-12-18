@@ -13,6 +13,7 @@ Here, you'll learn Python step by step, from basics to advanced concepts.
   <ul>
     <li><strong>Installation of Python</strong> – Learn what Python is and why it’s popular.</li>
     <li><strong>Introduction to Python</strong> – How to install Python on Windows, macOS, or Linux.</li>
+    <li><strong>Comments</strong> - Lines that explain the code and are ignored by Python. </li>
     <li><strong>Variables</strong> – Store and manipulate data.</li>
     <li><strong>Data Types</strong> – <code>int</code>, <code>float</code>, <code>str</code>, <code>bool</code>, etc.</li>
     <li><strong>Type Conversion</strong> – Convert between different data types.</li>
@@ -104,6 +105,32 @@ Happy Learning! 💻
     <li>Fast development</li>
 </ul>
 </div>
+
+<h2>Comments in Python</h2>
+
+<p>In Python, comments are used to explain code or make it more readable. Python ignores comments when running the program.</p>
+
+<h3>1️⃣ Single-line Comments</h3>
+<p>Use the <code>#</code> symbol. Everything after <code>#</code> is ignored by Python.</p>
+
+<pre>
+<code># This is a single-line comment
+print("Hello, World!")  # This prints a message
+</code>
+</pre>
+
+<h3>2️⃣ Multi-line Comments</h3>
+<p>Python doesn't have a specific multi-line comment syntax, but you can use triple quotes <code>'''</code> or <code>"""</code> to create a comment block.</p>
+
+<pre>
+<code>'''
+This is a multi-line comment.
+It can span multiple lines.
+Useful for explaining code blocks.
+'''
+print("Python comments example")
+</code>
+</pre>
 
 
 <h2>Variables in Python</h2>
@@ -273,6 +300,24 @@ You can also check the type using:</p>
         <td>Represents truth values</td>
     </tr>
 </table>
+<h4>Boolean in Python</h4>
+
+<p>Python treats values as <strong>True</strong> or <strong>False</strong> in a Boolean context:</p>
+
+<ul>
+  <li><strong>False values:</strong> 0, 0.0, "" (empty string), [], {}, set(), None</li>
+  <li><strong>Everything else is True</strong></li>
+</ul>
+
+<p>Examples:</p>
+
+<pre><code>print(bool(0))      # False
+print(bool(42))     # True
+print(bool(""))     # False
+print(bool("Hi"))   # True
+print(bool([]))     # False
+</code></pre>
+
 
 <h4>📁 4. Sequence Types</h4>
 <table border="1" cellpadding="5" cellspacing="0">
