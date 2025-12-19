@@ -694,6 +694,183 @@ print(sorted(numbers))    # [10, 20, 30]
 print(abs(-50))           # 50
 </code></pre>
 
+<h1>📝 Strings in Python</h1>
+
+<p>A string is a sequence of characters enclosed in:</p>
+
+<ul>
+    <li>Single quotes → <code>'hello'</code></li>
+    <li>Double quotes → <code>"hello"</code></li>
+    <li>Triple quotes → <code>'''hello'''</code> or <code>"""hello"""</code> (for multi-line strings)</li>
+</ul>
+
+<p>Strings are used to store text data like names, messages, etc.</p>
+
+<hr>
+
+<h2>✔️ Creating Strings</h2>
+
+<pre><code>s1 = 'Hello'
+s2 = "Python"
+s3 = '''This is
+a multiline
+string'''
+</code></pre>
+
+<hr>
+
+<h2>✔️ Accessing Characters (Indexing)</h2>
+
+<p>Each character has a position (index).</p>
+
+<pre><code>name = "Chaithu"
+print(name[0])   # C
+print(name[3])   # i
+print(name[-1])  # u  (negative index → from last)
+</code></pre>
+
+<hr>
+
+<h2>✔️ Slicing Strings</h2>
+
+<pre><code>text = "Python"
+print(text[0:3])   # Pyt
+print(text[2:])    # thon
+print(text[:4])    # Pyth
+print(text[-3:])   # hon
+</code></pre>
+<h2>🧵 Are Strings Mutable or Immutable in Python?</h2>
+
+<h3>✔️ Strings are Immutable</h3>
+
+<p>Once a string is created, you cannot change (modify) it directly.</p>
+
+<hr>
+
+<h3>🔹 Example</h3>
+
+<pre><code>name = "Chaithu"
+name = "J" + name[1:]
+print(name)
+</code></pre>
+
+<hr>
+
+<h3>🔍 Step-by-step Explanation</h3>
+
+<ul>
+    <li>Original string → <code>"Chaithu"</code></li>
+    <li><code>name[1:]</code> means substring from index 1 onward → <code>"haithu"</code></li>
+    <li><code>"J" + "haithu"</code> → <code>"Jhaithu"</code></li>
+</ul>
+
+<p><b>✅ Output:</b></p>
+
+<pre><code>Jhaithu
+</code></pre>
+
+<hr>
+
+<h3>❌ Immutable Example (Error)</h3>
+
+<pre><code>name = "Chaithu"
+name[0] = "J"     # ❌ Error: strings are immutable
+</code></pre>
+
+<p>This gives:</p>
+
+<pre><code>TypeError: 'str' object does not support item assignment
+</code></pre>
+
+<hr>
+
+<h3>✔️ What Actually Happens?</h3>
+
+<p>If you try to “change” a string, Python creates a new string instead of modifying the old one.</p>
+
+<pre><code>name = "Chaithu"
+name = "J" + name[1:]
+print(name)    # Jhaithu
+</code></pre>
+
+<hr>
+<h1>🔥 Important String Methods in Python</h1>
+
+<h3>📌 1. upper()</h3>
+<p><b>Purpose:</b> Converts all characters to uppercase.</p>
+<pre><code>"hello".upper()
+# Output: "HELLO"
+</code></pre>
+
+<h3>📌 2. lower()</h3>
+<p><b>Purpose:</b> Converts all characters to lowercase.</p>
+<pre><code>"HELLO".lower()
+# Output: "hello"
+</code></pre>
+
+<h3>📌 3. title()</h3>
+<p><b>Purpose:</b> Converts first letter of each word to uppercase.</p>
+<pre><code>"python programming".title()
+# Output: "Python Programming"
+</code></pre>
+
+<h3>📌 4. capitalize()</h3>
+<p><b>Purpose:</b> Converts only the first character to uppercase.</p>
+<pre><code>"hello world".capitalize()
+# Output: "Hello world"
+</code></pre>
+
+<h3>📌 5. strip()</h3>
+<p><b>Purpose:</b> Removes spaces from both sides.</p>
+<pre><code>"  hi  ".strip()
+# Output: "hi"
+</code></pre>
+
+<h3>📌 6. lstrip() / rstrip()</h3>
+<p><b>Purpose:</b> Removes spaces from left/right side.</p>
+<pre><code>"  hi".lstrip()     # "hi"
+"hi  ".rstrip()     # "hi"
+</code></pre>
+
+<h3>📌 7. replace(old, new)</h3>
+<p><b>Purpose:</b> Replace part of a string.</p>
+<pre><code>"banana".replace("a", "o")
+# Output: "bonono"
+</code></pre>
+
+<h3>📌 8. split(separator)</h3>
+<p><b>Purpose:</b> Converts string → list.</p>
+<pre><code>"a,b,c".split(",")
+# Output: ['a', 'b', 'c']
+</code></pre>
+
+<h3>📌 9. join(iterable)</h3>
+<p><b>Purpose:</b> Converts list → string.</p>
+<pre><code>",".join(['a', 'b', 'c'])
+# Output: "a,b,c"
+</code></pre>
+
+<h3>📌 10. startswith()</h3>
+<p><b>Purpose:</b> Checks if string starts with given substring.</p>
+<pre><code>"python".startswith("py")
+# Output: True
+</code></pre>
+
+<h3>📌 11. endswith()</h3>
+<p><b>Purpose:</b> Checks if string ends with given substring.</p>
+<pre><code>"python".endswith("on")
+# Output: True
+</code></pre>
+
+<h3>📌 12. find()</h3>
+<p><b>Purpose:</b> Returns index of first occurrence; returns -1 if not found.</p>
+<pre><code>"hello".find("l")
+# Output: 2
+</code></pre>
+
+<h3>📌 13. index()</h3>
+<p><b>Purpose:</b> Same as find(), but gives error if not fou
+
    
 
 
