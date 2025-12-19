@@ -869,9 +869,269 @@ print(name)    # Jhaithu
 </code></pre>
 
 <h3>📌 13. index()</h3>
-<p><b>Purpose:</b> Same as find(), but gives error if not fou
+<p><b>Purpose:</b> Same as find(), but gives error if not found.</p>
+<pre><code>"hello".index("l")
+# Output: 2
+</code></pre>
 
-   
+<h3>📌 14. count()</h3>
+<p><b>Purpose:</b> Counts how many times a substring appears.</p>
+<pre><code>"banana".count("a")
+# Output: 3
+</code></pre>
+
+<h3>📌 15. isnumeric()</h3>
+<p><b>Purpose:</b> Checks if all characters are numbers.</p>
+<pre><code>"123".isnumeric()
+# Output: True
+
+"abc".isnumeric()
+# Output: False
+</code></pre>
+
+<h3>📌 16. isdigit()</h3>
+<p><b>Purpose:</b> Checks digits (0–9).</p>
+<pre><code>"45".isdigit()
+# True
+</code></pre>
+
+<h3>📌 17. isalpha()</h3>
+<p><b>Purpose:</b> Checks if all characters are alphabets.</p>
+<pre><code>"abc".isalpha()
+# True
+</code></pre>
+
+<h3>📌 18. isalnum()</h3>
+<p><b>Purpose:</b> Checks alphabets + numbers (no spaces).</p>
+<pre><code>"abc123".isalnum()
+# True
+</code></pre>
+
+<h3>📌 19. islower() / isupper()</h3>
+<p><b>Purpose:</b> Checks if all characters are lowercase or uppercase.</p>
+<pre><code>"hello".islower()   # True
+"HELLO".isupper()   # True
+</code></pre>
+
+<h3>📌 20. swapcase()</h3>
+<p><b>Purpose:</b> Converts uppercase ↔ lowercase.</p>
+<pre><code>"Hello".swapcase()
+# Output: "hELLO"
+</code></pre>
+
+<h2> Python Lists </h2>
+
+<h3> What is a List?</h3>
+<p>
+A <b>list</b> in Python is a collection of ordered items. Lists can store numbers, strings, floats, booleans, or even other lists.
+</p>
+<pre>
+my_list = [10, "hello", 3.5, True]
+</pre>
+
+<h3>✔️ 2. Creating Lists</h3>
+<p>
+Lists can be created in multiple ways: empty list, list of numbers, mixed list, or from a string.
+</p>
+<pre>
+empty = []                    # Empty list
+numbers = [10, 20, 30]        # List of integers
+mixed = [10, "Python", 5.5]   # Mixed data types
+from_string = list("Hi")      # Creates ['H', 'i']
+</pre>
+
+<h3>✔️ 3. Accessing Elements (Indexing)</h3>
+<p>
+Each element in a list has an index. You can access elements using positive or negative indexing.
+</p>
+<pre>
+name = ["apple", "banana", "cherry"]
+print(name[0])   # apple
+print(name[2])   # cherry
+print(name[-1])  # cherry (from last)
+</pre>
+
+<h3>✔️ 4. Slicing Lists</h3>
+<p>
+Slicing allows you to extract a portion of the list using <b>start</b>, <b>end</b>, and <b>step</b>.
+</p>
+
+<p><b>Syntax:</b></p>
+<pre>
+list[start:end:step]
+</pre>
+
+<ul>
+<li><b>start</b> → Starting index of the slice (inclusive)</li>
+<li><b>end</b> → Ending index of the slice (exclusive)</li>
+<li><b>step</b> → Step size (optional, default is 1)</li>
+</ul>
+
+<p><b>Examples:</b></p>
+<pre>
+nums = [10, 20, 30, 40, 50, 60]
+
+print(nums[1:4])   # [20, 30, 40]  → elements from index 1 to 3
+print(nums[:3])    # [10, 20, 30]  → from start to index 2
+print(nums[3:])    # [40, 50, 60]  → from index 3 to end
+print(nums[::2])   # [10, 30, 50]  → every 2nd element
+</pre>
+
+
+<h3>✔️ 5. Lists Are Mutable</h3>
+<p>
+Lists can be changed after creation by modifying, adding, or removing elements.
+</p>
+<pre>
+a = [10, 20, 30]
+a[1] = 200
+print(a)   # [10, 200, 30]
+</pre>
+
+<h3>✔️ 6. Adding Elements</h3>
+<p>
+You can add elements to a list using <b>append</b>, <b>insert</b>, or <b>extend</b>.
+</p>
+<pre>
+a.append(50)          # Add at end
+a.insert(1, 99)       # Add at specific index
+a.extend([100, 200])  # Add multiple items
+</pre>
+
+<h3>✔️ 7. Removing Elements</h3>
+<p>
+Elements can be removed using <b>remove</b>, <b>pop</b>, <b>del</b>, or <b>clear</b>.
+</p>
+<pre>
+a.remove(20)    # Removes first matching value
+a.pop(1)        # Removes by index
+a.pop()         # Removes last item
+del a[0]        # Delete by index
+del a[1:3]      # Delete slice
+a.clear()       # Removes all elements
+</pre>
+
+<h3>✔️ 8. Copying Lists</h3>
+<p>
+Lists can be copied using assignment, shallow copy, or deep copy.
+</p>
+
+<h4>Assignment (b = a)</h4>
+<p>
+Assignment creates a reference to the same list. Changes in one affect the other.
+</p>
+<pre>
+a = [10, 20, 30]
+b = a
+a.append(50)
+print(a)  # [10, 20, 30, 50]
+print(b)  # [10, 20, 30, 50]
+</pre>
+
+<h4>Shallow Copy (b = a.copy())</h4>
+<p>
+Shallow copy creates a new outer list but shares inner lists. Changes to nested lists affect the original.
+</p>
+<pre>
+# Flat list
+a = [10, 20, 30]
+b = a.copy()
+a.append(50)
+print(a)  # [10, 20, 30, 50]
+print(b)  # [10, 20, 30]
+<h3>  Nested list</h3>
+
+a = [1, [2, 3]]
+b = a.copy()
+b[0] = 100
+b[1][0] = 200
+print(a)  # [1, [200, 3]]
+print(b)  # [100, [200, 3]]
+</pre>
+
+<h4>Deep Copy (copy.deepcopy())</h4>
+<p>
+Deep copy creates a fully independent copy, including nested lists.
+</p>
+<pre>
+import copy
+a = [1, [2, 3]]
+b = copy.deepcopy(a)
+b[1][0] = 200
+print(a)  # [1, [2, 3]]
+print(b)  # [1, [200, 3]]
+</pre>
+
+<h3>✔️ 9. sort()</h3>
+<p>
+Sorts the list in ascending or descending order.
+</p>
+<pre>
+nums.sort()                 # ascending
+nums.sort(reverse=True)     # descending
+</pre>
+
+<h3>✔️ 10. reverse()</h3>
+<p>
+Reverses the order of the list elements.
+</p>
+<pre>
+nums.reverse()
+</pre>
+
+<h3>✔️ 11. count()</h3>
+<p>
+Counts how many times a particular element appears in a list.
+</p>
+<pre>
+a.count(10)
+</pre>
+
+<h3>✔️ 12. index()</h3>
+<p>
+Returns the index of the first occurrence of an element in the list.
+</p>
+<pre>
+a.index(30)
+</pre>
+
+<h3>✔️ 13. Iterating Through a List</h3>
+<p>
+You can loop through the list using a for loop or index.
+</p>
+<pre>
+# Using loop
+for item in fruits:
+    print(item)
+
+<h3> Using index</h3>
+for i in range(len(fruits)):
+    print(i, fruits[i])
+</pre>
+
+<h3>✔️ 14. Checking Membership</h3>
+<p>
+Check if an element exists in a list.
+</p>
+<pre>
+"apple" in fruits       # True
+"grapes" not in fruits  # True
+</pre>
+
+<h3>✔️ 15. Nested Lists</h3>
+<p>
+Lists can contain other lists. Access nested elements using multiple indices.
+</p>
+<pre>
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+print(matrix[0])      # [1,2,3]
+print(matrix[1][2])   # 6
+</pre>
+
 
 
 
