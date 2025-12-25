@@ -919,7 +919,7 @@ print(name)    # Jhaithu
 # Output: "hELLO"
 </code></pre>
 
-<h2> Python Lists </h2>
+<h1> Python Lists </h1>
 
 <h3> What is a List?</h3>
 <p>
@@ -1132,7 +1132,160 @@ print(matrix[0])      # [1,2,3]
 print(matrix[1][2])   # 6
 </pre>
 
+<h1> Python Tuple </h1>
+<h3>✔️ 1. What is a Tuple?</h3>
+<p>
+A <b>tuple</b> in Python is a collection of <b>ordered</b> items, similar to a list, but <b>immutable</b>. 
+Once a tuple is created, you cannot change, add, or remove its elements. 
+Tuples can store numbers, strings, booleans, floats, or even other tuples/lists.
+</p>
 
+<pre>
+# Example of a tuple
+my_tuple = (10, "hello", 3.5, True)
+print(my_tuple)
+# Output: (10, 'hello', 3.5, True)
+</pre>
+
+<h3>✔️ 2. Creating Tuples</h3>
+<p>
+Tuples can be created using parentheses or comma-separated values. Single-element tuples require a comma.
+</p>
+<pre>
+empty = ()                   # Empty tuple
+numbers = (10, 20, 30)       # Tuple of integers
+mixed = (10, "Python", 5.5)  # Mixed data types
+no_parenthesis = 1, 2, 3     # Tuple without ()
+single_element = (5,)        # Single-element tuple
+
+print(numbers)
+<h3> Output: (10, 20, 30)</h3>
+</pre>
+
+<h3>✔️ 3. Accessing Elements (Indexing)</h3>
+<p>
+Each element has an index. Access elements using positive or negative indexing.
+</p>
+<pre>
+fruits = ("apple", "banana", "cherry")
+print(fruits[0])   # apple
+print(fruits[2])   # cherry
+print(fruits[-1])  # cherry
+</pre>
+
+<h3>✔️ 4. Slicing Tuples</h3>
+<p>
+Slicing extracts a portion of a tuple using <b>start</b>, <b>end</b>, and <b>step</b>.
+</p>
+<p><b>Syntax:</b></p>
+<pre>
+tuple[start:end:step]
+</pre>
+<ul>
+<li><b>start</b> → starting index (inclusive)</li>
+<li><b>end</b> → ending index (exclusive)</li>
+<li><b>step</b> → step size (optional, default is 1)</li>
+</ul>
+<pre>
+nums = (10, 20, 30, 40, 50)
+print(nums[1:4])   # (20, 30, 40)
+print(nums[:3])    # (10, 20, 30)
+print(nums[3:])    # (40, 50)
+print(nums[::2])   # (10, 30, 50)
+</pre>
+
+<h3>✔️ 5. Tuples Are Immutable</h3>
+<p>
+Once a tuple is created, you cannot modify, add, or remove elements.
+</p>
+<pre>
+t = (10, 20, 30)
+# t[1] = 200   # ❌ Error: 'tuple' object does not support item assignment
+</pre>
+
+<h3>✔️ 6. Tuple Methods</h3>
+<p>
+Tuples support only a few methods: <b>count()</b> and <b>index()</b>.
+</p>
+<pre>
+t = (10, 20, 30, 10)
+
+<h3> Count occurrences of an element</h3>
+print(t.count(10))   # 2
+
+<h3> Find index of first occurrence</h3>
+print(t.index(30))   # 2
+</pre>
+
+<h3>✔️ 7. Nested Tuples</h3>
+<p>
+Tuples can contain other tuples or lists.
+</p>
+<pre>
+nested = (1, (2, 3), [4, 5])
+print(nested[1])     # (2, 3)
+print(nested[1][0])  # 2
+print(nested[2][1])  # 5
+</pre>
+
+<h3>✔️ 8. Tuple Operations</h3>
+<p>
+Common operations include concatenation, repetition, membership checking, and length.
+</p>
+<pre>
+t1 = (1, 2, 3)
+t2 = (4, 5)
+
+<h3>Concatenation</h3>
+t3 = t1 + t2
+print(t3)   # (1, 2, 3, 4, 5)
+
+<h3>Repetition</h3>
+t4 = t1 * 2
+print(t4)   # (1, 2, 3, 1, 2, 3)
+
+<h3>Membership</h3>
+print(2 in t1)  # True
+
+<h3> Length</h3>
+print(len(t1))  # 3
+</pre>
+
+<h3>✔️ 9. Iterating Through a Tuple</h3>
+<p>
+Loop through the tuple using a for loop or using index.
+</p>
+<pre>
+t = (10, 20, 30)
+
+<h3> Using loop</h3>
+for item in t:
+    print(item)
+
+<h3>Using index</h3>
+for i in range(len(t)):
+    print(i, t[i])
+</pre>
+<h3>Output:</h3>
+<pre>
+10
+20
+30
+0 10
+1 20
+2 30
+</pre>
+
+<h3>✔️ 10. Tuple vs List</h3>
+<p>
+Key differences between tuples and lists:
+</p>
+<ul>
+<li>Tuples are <b>immutable</b>, lists are <b>mutable</b></li>
+<li>Tuples are faster than lists for iteration and access</li>
+<li>Tuples can be used as dictionary keys, lists cannot</li>
+<li>Lists are better when data needs frequent modification</li>
+</ul>
 
 
 
