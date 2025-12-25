@@ -319,7 +319,7 @@ You can also check the type using:</p>
 <h3>➡️ How Many Data Types Are There in Python?</h3>
 <p>Python has several built-in data types. They are grouped into categories:</p>
 
-<h4>📁 1. Numeric Types</h4>
+<h4> 1. Numeric Types</h4>
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
         <th>Type</th>
@@ -343,7 +343,7 @@ You can also check the type using:</p>
     </tr>
 </table>
 
-<h4>📁 2. String Type</h4>
+<h4> 2. String Type</h4>
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
         <th>Type</th>
@@ -357,7 +357,7 @@ You can also check the type using:</p>
     </tr>
 </table>
 
-<h4>📁 3. Boolean Type</h4>
+<h4>3. Boolean Type</h4>
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
         <th>Type</th>
@@ -389,7 +389,7 @@ print(bool([]))     # False
 </code></pre>
 
 
-<h4>📁 4. Sequence Types</h4>
+<h4>4. Sequence Types</h4>
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
         <th>Type</th>
@@ -413,7 +413,7 @@ print(bool([]))     # False
     </tr>
 </table>
 
-<h4>📁 5. Mapping Type</h4>
+<h4> 5. Mapping Type</h4>
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
         <th>Type</th>
@@ -427,7 +427,7 @@ print(bool([]))     # False
     </tr>
 </table>
 
-<h4>📁 6. Set Types</h4>
+<h4> 6. Set Types</h4>
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
         <th>Type</th>
@@ -794,126 +794,126 @@ print(name)    # Jhaithu
 </code></pre>
 
 <hr>
-<h1>🔥 Important String Methods in Python</h1>
+<h1> Important String Methods in Python</h1>
 
-<h3>📌 1. upper()</h3>
+<h3> 1. upper()</h3>
 <p><b>Purpose:</b> Converts all characters to uppercase.</p>
 <pre><code>"hello".upper()
 # Output: "HELLO"
 </code></pre>
 
-<h3>📌 2. lower()</h3>
+<h3> 2. lower()</h3>
 <p><b>Purpose:</b> Converts all characters to lowercase.</p>
 <pre><code>"HELLO".lower()
 # Output: "hello"
 </code></pre>
 
-<h3>📌 3. title()</h3>
+<h3> 3. title()</h3>
 <p><b>Purpose:</b> Converts first letter of each word to uppercase.</p>
 <pre><code>"python programming".title()
 # Output: "Python Programming"
 </code></pre>
 
-<h3>📌 4. capitalize()</h3>
+<h3> 4. capitalize()</h3>
 <p><b>Purpose:</b> Converts only the first character to uppercase.</p>
 <pre><code>"hello world".capitalize()
 # Output: "Hello world"
 </code></pre>
 
-<h3>📌 5. strip()</h3>
+<h3> 5. strip()</h3>
 <p><b>Purpose:</b> Removes spaces from both sides.</p>
 <pre><code>"  hi  ".strip()
 # Output: "hi"
 </code></pre>
 
-<h3>📌 6. lstrip() / rstrip()</h3>
+<h3> 6. lstrip() / rstrip()</h3>
 <p><b>Purpose:</b> Removes spaces from left/right side.</p>
 <pre><code>"  hi".lstrip()     # "hi"
 "hi  ".rstrip()     # "hi"
 </code></pre>
 
-<h3>📌 7. replace(old, new)</h3>
+<h3> 7. replace(old, new)</h3>
 <p><b>Purpose:</b> Replace part of a string.</p>
 <pre><code>"banana".replace("a", "o")
 # Output: "bonono"
 </code></pre>
 
-<h3>📌 8. split(separator)</h3>
+<h3> 8. split(separator)</h3>
 <p><b>Purpose:</b> Converts string → list.</p>
 <pre><code>"a,b,c".split(",")
 # Output: ['a', 'b', 'c']
 </code></pre>
 
-<h3>📌 9. join(iterable)</h3>
+<h3> 9. join(iterable)</h3>
 <p><b>Purpose:</b> Converts list → string.</p>
 <pre><code>",".join(['a', 'b', 'c'])
 # Output: "a,b,c"
 </code></pre>
 
-<h3>📌 10. startswith()</h3>
+<h3> 10. startswith()</h3>
 <p><b>Purpose:</b> Checks if string starts with given substring.</p>
 <pre><code>"python".startswith("py")
 # Output: True
 </code></pre>
 
-<h3>📌 11. endswith()</h3>
+<h3> 11. endswith()</h3>
 <p><b>Purpose:</b> Checks if string ends with given substring.</p>
 <pre><code>"python".endswith("on")
 # Output: True
 </code></pre>
 
-<h3>📌 12. find()</h3>
+<h3> 12. find()</h3>
 <p><b>Purpose:</b> Returns index of first occurrence; returns -1 if not found.</p>
 <pre><code>"hello".find("l")
 # Output: 2
 </code></pre>
 
-<h3>📌 13. index()</h3>
+<h3> 13. index()</h3>
 <p><b>Purpose:</b> Same as find(), but gives error if not found.</p>
 <pre><code>"hello".index("l")
 # Output: 2
 </code></pre>
 
-<h3>📌 14. count()</h3>
+<h3> 14. count()</h3>
 <p><b>Purpose:</b> Counts how many times a substring appears.</p>
 <pre><code>"banana".count("a")
 # Output: 3
 </code></pre>
 
-<h3>📌 15. isnumeric()</h3>
+<h3> 15. isnumeric()</h3>
 <p><b>Purpose:</b> Checks if all characters are numbers.</p>
 <pre><code>"123".isnumeric()
 # Output: True
 
 "abc".isnumeric()
-# Output: False
+<h3># Output: False</h3>
 </code></pre>
 
-<h3>📌 16. isdigit()</h3>
+<h3> 16. isdigit()</h3>
 <p><b>Purpose:</b> Checks digits (0–9).</p>
 <pre><code>"45".isdigit()
 # True
 </code></pre>
 
-<h3>📌 17. isalpha()</h3>
+<h3> 17. isalpha()</h3>
 <p><b>Purpose:</b> Checks if all characters are alphabets.</p>
 <pre><code>"abc".isalpha()
 # True
 </code></pre>
 
-<h3>📌 18. isalnum()</h3>
+<h3> 18. isalnum()</h3>
 <p><b>Purpose:</b> Checks alphabets + numbers (no spaces).</p>
 <pre><code>"abc123".isalnum()
 # True
 </code></pre>
 
-<h3>📌 19. islower() / isupper()</h3>
+<h3> 19. islower() / isupper()</h3>
 <p><b>Purpose:</b> Checks if all characters are lowercase or uppercase.</p>
 <pre><code>"hello".islower()   # True
 "HELLO".isupper()   # True
 </code></pre>
 
-<h3>📌 20. swapcase()</h3>
+<h3> 20. swapcase()</h3>
 <p><b>Purpose:</b> Converts uppercase ↔ lowercase.</p>
 <pre><code>"Hello".swapcase()
 # Output: "hELLO"
@@ -921,7 +921,7 @@ print(name)    # Jhaithu
 
 <h1> Python Lists </h1>
 
-<h3> What is a List?</h3>
+<h3>1.What is a List?</h3>
 <p>
 A <b>list</b> in Python is a collection of ordered items. Lists can store numbers, strings, floats, booleans, or even other lists.
 </p>
@@ -929,7 +929,7 @@ A <b>list</b> in Python is a collection of ordered items. Lists can store number
 my_list = [10, "hello", 3.5, True]
 </pre>
 
-<h3>✔️ 2. Creating Lists</h3>
+<h3>2. Creating Lists</h3>
 <p>
 Lists can be created in multiple ways: empty list, list of numbers, mixed list, or from a string.
 </p>
@@ -940,7 +940,7 @@ mixed = [10, "Python", 5.5]   # Mixed data types
 from_string = list("Hi")      # Creates ['H', 'i']
 </pre>
 
-<h3>✔️ 3. Accessing Elements (Indexing)</h3>
+<h3> 3. Accessing Elements (Indexing)</h3>
 <p>
 Each element in a list has an index. You can access elements using positive or negative indexing.
 </p>
@@ -951,7 +951,7 @@ print(name[2])   # cherry
 print(name[-1])  # cherry (from last)
 </pre>
 
-<h3>✔️ 4. Slicing Lists</h3>
+<h3> 4. Slicing Lists</h3>
 <p>
 Slicing allows you to extract a portion of the list using <b>start</b>, <b>end</b>, and <b>step</b>.
 </p>
@@ -978,7 +978,7 @@ print(nums[::2])   # [10, 30, 50]  → every 2nd element
 </pre>
 
 
-<h3>✔️ 5. Lists Are Mutable</h3>
+<h3> 5. Lists Are Mutable</h3>
 <p>
 Lists can be changed after creation by modifying, adding, or removing elements.
 </p>
@@ -988,7 +988,7 @@ a[1] = 200
 print(a)   # [10, 200, 30]
 </pre>
 
-<h3>✔️ 6. Adding Elements</h3>
+<h3> 6. Adding Elements</h3>
 <p>
 You can add elements to a list using <b>append</b>, <b>insert</b>, or <b>extend</b>.
 </p>
@@ -998,7 +998,7 @@ a.insert(1, 99)       # Add at specific index
 a.extend([100, 200])  # Add multiple items
 </pre>
 
-<h3>✔️ 7. Removing Elements</h3>
+<h3> 7. Removing Elements</h3>
 <p>
 Elements can be removed using <b>remove</b>, <b>pop</b>, <b>del</b>, or <b>clear</b>.
 </p>
@@ -1011,7 +1011,7 @@ del a[1:3]      # Delete slice
 a.clear()       # Removes all elements
 </pre>
 
-<h3>✔️ 8. Copying Lists</h3>
+<h3> 8. Copying Lists</h3>
 <p>
 Lists can be copied using assignment, shallow copy, or deep copy.
 </p>
@@ -1062,7 +1062,7 @@ print(a)  # [1, [2, 3]]
 print(b)  # [1, [200, 3]]
 </pre>
 
-<h3>✔️ 9. sort()</h3>
+<h3> 9. sort()</h3>
 <p>
 Sorts the list in ascending or descending order.
 </p>
@@ -1071,7 +1071,7 @@ nums.sort()                 # ascending
 nums.sort(reverse=True)     # descending
 </pre>
 
-<h3>✔️ 10. reverse()</h3>
+<h3> 10. reverse()</h3>
 <p>
 Reverses the order of the list elements.
 </p>
@@ -1079,7 +1079,7 @@ Reverses the order of the list elements.
 nums.reverse()
 </pre>
 
-<h3>✔️ 11. count()</h3>
+<h3> 11. count()</h3>
 <p>
 Counts how many times a particular element appears in a list.
 </p>
@@ -1087,7 +1087,7 @@ Counts how many times a particular element appears in a list.
 a.count(10)
 </pre>
 
-<h3>✔️ 12. index()</h3>
+<h3> 12. index()</h3>
 <p>
 Returns the index of the first occurrence of an element in the list.
 </p>
@@ -1095,7 +1095,7 @@ Returns the index of the first occurrence of an element in the list.
 a.index(30)
 </pre>
 
-<h3>✔️ 13. Iterating Through a List</h3>
+<h3> 13. Iterating Through a List</h3>
 <p>
 You can loop through the list using a for loop or index.
 </p>
@@ -1109,7 +1109,7 @@ for i in range(len(fruits)):
     print(i, fruits[i])
 </pre>
 
-<h3>✔️ 14. Checking Membership</h3>
+<h3> 14. Checking Membership</h3>
 <p>
 Check if an element exists in a list.
 </p>
@@ -1118,7 +1118,7 @@ Check if an element exists in a list.
 "grapes" not in fruits  # True
 </pre>
 
-<h3>✔️ 15. Nested Lists</h3>
+<h3> 15. Nested Lists</h3>
 <p>
 Lists can contain other lists. Access nested elements using multiple indices.
 </p>
@@ -1133,7 +1133,7 @@ print(matrix[1][2])   # 6
 </pre>
 
 <h1> Python Tuple </h1>
-<h3>✔️ 1. What is a Tuple?</h3>
+<h3> 1. What is a Tuple?</h3>
 <p>
 A <b>tuple</b> in Python is a collection of <b>ordered</b> items, similar to a list, but <b>immutable</b>. 
 Once a tuple is created, you cannot change, add, or remove its elements. 
@@ -1147,7 +1147,7 @@ print(my_tuple)
 # Output: (10, 'hello', 3.5, True)
 </pre>
 
-<h3>✔️ 2. Creating Tuples</h3>
+<h3> 2. Creating Tuples</h3>
 <p>
 Tuples can be created using parentheses or comma-separated values. Single-element tuples require a comma.
 </p>
@@ -1162,7 +1162,7 @@ print(numbers)
 <h3> Output: (10, 20, 30)</h3>
 </pre>
 
-<h3>✔️ 3. Accessing Elements (Indexing)</h3>
+<h3> 3. Accessing Elements (Indexing)</h3>
 <p>
 Each element has an index. Access elements using positive or negative indexing.
 </p>
@@ -1173,7 +1173,7 @@ print(fruits[2])   # cherry
 print(fruits[-1])  # cherry
 </pre>
 
-<h3>✔️ 4. Slicing Tuples</h3>
+<h3> 4. Slicing Tuples</h3>
 <p>
 Slicing extracts a portion of a tuple using <b>start</b>, <b>end</b>, and <b>step</b>.
 </p>
@@ -1194,7 +1194,7 @@ print(nums[3:])    # (40, 50)
 print(nums[::2])   # (10, 30, 50)
 </pre>
 
-<h3>✔️ 5. Tuples Are Immutable</h3>
+<h3> 5. Tuples Are Immutable</h3>
 <p>
 Once a tuple is created, you cannot modify, add, or remove elements.
 </p>
@@ -1203,7 +1203,7 @@ t = (10, 20, 30)
 # t[1] = 200   # ❌ Error: 'tuple' object does not support item assignment
 </pre>
 
-<h3>✔️ 6. Tuple Methods</h3>
+<h3> 6. Tuple Methods</h3>
 <p>
 Tuples support only a few methods: <b>count()</b> and <b>index()</b>.
 </p>
@@ -1217,7 +1217,7 @@ print(t.count(10))   # 2
 print(t.index(30))   # 2
 </pre>
 
-<h3>✔️ 7. Nested Tuples</h3>
+<h3> 7. Nested Tuples</h3>
 <p>
 Tuples can contain other tuples or lists.
 </p>
@@ -1228,7 +1228,7 @@ print(nested[1][0])  # 2
 print(nested[2][1])  # 5
 </pre>
 
-<h3>✔️ 8. Tuple Operations</h3>
+<h3> 8. Tuple Operations</h3>
 <p>
 Common operations include concatenation, repetition, membership checking, and length.
 </p>
@@ -1251,7 +1251,7 @@ print(2 in t1)  # True
 print(len(t1))  # 3
 </pre>
 
-<h3>✔️ 9. Iterating Through a Tuple</h3>
+<h3> 9. Iterating Through a Tuple</h3>
 <p>
 Loop through the tuple using a for loop or using index.
 </p>
@@ -1276,7 +1276,7 @@ for i in range(len(t)):
 2 30
 </pre>
 
-<h3>✔️ 10. Tuple vs List</h3>
+<h3> 10. Tuple vs List</h3>
 <p>
 Key differences between tuples and lists:
 </p>
@@ -1287,6 +1287,432 @@ Key differences between tuples and lists:
 <li>Lists are better when data needs frequent modification</li>
 </ul>
 
+<h1> Python Sets </h1>
+
+<h3> 1. What is a Set?</h3>
+<p><b>Purpose:</b> To store a collection of <b>unique elements</b>.</p>
+
+<p>
+A <b>set</b> in Python is an unordered collection of items where duplicate values are not allowed.
+Sets are commonly used to remove duplicates and perform mathematical operations.
+</p>
+
+<p><b>Example:</b> A set storing numbers → <code>{10, 20, 30}</code></p>
+
+
+<h3> 2. Creating Sets</h3>
+<p><b>Purpose:</b> To initialize a set in different ways.</p>
+
+<p>You can create a set using:</p>
+<ul>
+  <li>Curly braces <code>{ }</code></li>
+  <li>The <code>set()</code> constructor</li>
+</ul>
+
+<p><b>Important:</b> <code>{}</code> creates a dictionary, not a set.  
+To create an empty set, always use <code>set()</code>.</p>
+
+<pre>
+s1 = {1, 2, 3}
+s2 = set([10, 20, 30])
+empty_set = set()
+</pre>
+
+<h3> 3. Sets Do Not Allow Duplicates</h3>
+<p><b>Purpose:</b> To automatically remove repeated values.</p>
+
+<p>If duplicate elements are added, Python keeps only one copy.</p>
+
+<pre>
+s = {10, 20, 20, 30, 30}
+print(s)
+
+# Output: {10, 20, 30}
+</pre>
+
+<h3> 4. Order in Sets (Unordered)</h3>
+<p><b>Purpose:</b> To understand how elements are stored.</p>
+
+<ul>
+  <li>No fixed position</li>
+  <li>No indexing</li>
+  <li>No slicing</li>
+  <li>Order may change every time you print</li>
+</ul>
+
+<pre>
+s = {10, 20, 30}
+print(s)
+
+# Output may vary:
+# {10, 20, 30} OR {30, 10, 20}
+
+# print(s[0])   ❌ Error
+</pre>
+
+<h3> 5. Sets are Mutable</h3>
+<p><b>Purpose:</b> To allow changes after creation.</p>
+
+<p>You can add or remove elements, but you cannot modify an existing element.</p>
+
+<pre>
+s = {1, 2, 3}
+s.add(4)
+s.remove(2)
+print(s)
+
+# Output: {1, 3, 4}
+</pre>
+
+<h3> 6. Adding Elements to a Set</h3>
+<p><b>Purpose:</b> To insert new elements.</p>
+
+<p><b>Add single element:</b></p>
+<pre>
+s = {5, 10}
+s.add(15)
+print(s)
+
+<h4># Output: {5, 10, 15}</h4>
+</pre>
+
+<p><b>Add multiple elements:</b></p>
+<pre>
+s.update([20, 25])
+print(s)
+
+<h4>Output: {5, 10, 15, 20, 25}</h4>
+</pre>
+
+<h3> 7. Removing Elements from a Set</h3>
+<p><b>Purpose:</b> To delete elements safely.</p>
+
+<pre>
+s = {10, 20, 30}
+
+s.remove(20)
+print(s)        # {10, 30}
+
+s.discard(40)   # No error
+print(s)        # {10, 30}
+
+s.pop()         # Removes random element
+print(s)
+
+s.clear()
+print(s)        # set()
+</pre>
+
+<h3> 8. Copying a Set</h3>
+<p><b>Purpose:</b> To create a duplicate set.</p>
+
+<pre>
+a = {1, 2, 3}
+b = a.copy()
+
+b.add(4)
+
+print(a)   # {1, 2, 3}
+print(b)   # {1, 2, 3, 4}
+</pre>
+
+<h3> 9. Set Operations</h3>
+<p><b>Purpose:</b> To perform mathematical operations.</p>
+
+<pre>
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a | b)   # Union → {1, 2, 3, 4, 5}
+print(a & b)   # Intersection → {3}
+print(a - b)   # Difference → {1, 2}
+print(a ^ b)   # Symmetric Difference → {1, 2, 4, 5}
+</pre>
+
+<h3> 10. Checking Membership</h3>
+<p><b>Purpose:</b> To check if an element exists.</p>
+
+<pre>
+s = {10, 20, 30}
+
+print(20 in s)        # True
+print(50 not in s)    # True
+</pre>
+
+<h3> 11. Iterating Through a Set</h3>
+<p><b>Purpose:</b> To access elements one by one.</p>
+
+<pre>
+s = {1, 2, 3}
+
+for i in s:
+    print(i)
+</pre>
+
+<p><i>Note: Order is not guaranteed.</i></p>
+
+
+<h3> 12. Frozen Set (Immutable Set)</h3>
+<p><b>Purpose:</b> To create an unchangeable set.</p>
+
+<pre>
+fs = frozenset([1, 2, 3])
+print(fs)
+
+# fs.add(4)   ❌ Error
+</pre>
+
+
+<h3> 13. Set vs List vs Tuple</h3>
+<p><b>Purpose:</b> To compare data structures.</p>
+
+<pre>
+lst = [1, 1, 2]
+tup = (1, 1, 2)
+st  = {1, 1, 2}
+
+print(lst)  # [1, 1, 2]
+print(tup)  # (1, 1, 2)
+print(st)   # {1, 2}
+</pre>
+
+<h3>📌 Use Case</h3>
+<p>
+<b>Sets</b> are commonly used when:
+</p>
+
+<ul>
+  <li>You need to store <b>unique values</b></li>
+  <li>You want to <b>remove duplicates</b> from data</li>
+  <li>You need <b>fast membership checking</b></li>
+  <li>You want to perform <b>mathematical set operations</b> like union and intersection</li>
+</ul>
+
+<h1> Python Dictionary</h1>
+<p>
+A <b>dictionary</b> in Python is a collection that stores data in <b>key–value pairs</b>.
+It is widely used to represent structured and meaningful data.
+</p>
+
+<hr>
+
+<h3> 1. What is a Dictionary?</h3>
+<p>
+The purpose of a dictionary is to store data using <b>keys</b> instead of indexes.
+Each key maps to a value, allowing fast access.
+</p>
+
+<pre>
+student = {"name": "Chaithu", "age": 22, "course": "Python"}
+</pre>
+
+<hr>
+
+<h3> 2. Creating a Dictionary</h3>
+<p>
+The purpose of creating a dictionary is to initialize data in key–value format.
+</p>
+
+<pre>
+d1 = {"a": 1, "b": 2}
+d2 = dict(name="Python", version=3.12)
+empty_dict = {}
+</pre>
+
+<hr>
+
+<h3> 3. Dictionary Structure (Key–Value)</h3>
+<p>
+The purpose of dictionary structure is to organize data using meaningful keys.
+</p>
+<ul>
+  <li>Keys must be unique and immutable (int, string, tuple)</li>
+  <li>Values can be of any data type (int, list, dict, etc.)</li>
+</ul>
+
+<pre>
+data = {
+  "id": 101,
+  "skills": ["Python", "Django"],
+  "active": True
+}
+</pre>
+
+<hr>
+
+<h3> 4. Accessing Dictionary Values</h3>
+<p>
+The purpose of accessing values is to retrieve data using keys.
+</p>
+
+<pre>
+student = {"name": "Chaithu", "age": 22}
+print(student["name"])      # Chaithu
+print(student.get("age"))   # 22
+</pre>
+
+<hr>
+
+<h3> 5. Dictionaries are Mutable</h3>
+<p>
+The purpose of mutability is to allow updating dictionary values.
+</p>
+
+<pre>
+d = {"a": 10, "b": 20}
+d["b"] = 200
+print(d)
+</pre>
+
+<hr>
+
+<h3> 6. Adding Elements</h3>
+<p>
+The purpose of adding elements is to insert new key–value pairs.
+</p>
+
+<pre>
+d = {"a": 1}
+d["b"] = 2
+print(d)
+</pre>
+
+<hr>
+
+<h3> 7. Removing Elements</h3>
+<p>
+The purpose of removing elements is to delete unnecessary data.
+</p>
+
+<pre>
+d = {"a": 1, "b": 2}
+d.pop("a")
+del d["b"]
+print(d)
+</pre>
+
+<hr>
+
+<h3> 8. Dictionary Methods</h3>
+<p>
+The purpose of dictionary methods is to work with keys and values efficiently.
+</p>
+
+<pre>
+d = {"a": 1, "b": 2}
+print(d.keys())
+print(d.values())
+print(d.items())
+</pre>
+
+<hr>
+
+<h3> 9. Iterating Through a Dictionary</h3>
+<p>
+The purpose of iteration is to process each key and value.
+</p>
+
+<pre>
+for key, value in d.items():
+    print(key, value)
+</pre>
+
+<hr>
+
+<h3> 10. Checking Membership</h3>
+<p>
+The purpose of membership checking is to verify whether a key exists.
+</p>
+
+<pre>
+d = {"a": 1, "b": 2}
+print("a" in d)
+print("x" not in d)
+</pre>
+
+<hr>
+
+<h3> 11. Copying Dictionaries</h3>
+<p>
+The purpose of copying is to duplicate dictionary data safely.
+</p>
+
+<pre>
+a = {"x": 1}
+b = a.copy()
+</pre>
+
+<hr>
+
+<h3> 12. Nested Dictionaries</h3>
+<p>
+The purpose of nested dictionaries is to store complex data.
+</p>
+
+<pre>
+student = {
+  "name": "Chaithu",
+  "marks": {
+    "maths": 90,
+    "python": 95
+  }
+}
+print(student["marks"]["python"])
+</pre>
+
+<hr>
+
+<h3> 13. Dictionary vs List vs Set</h3>
+<p>
+The purpose of comparison is to understand when to use dictionaries.
+</p>
+
+<table>
+  <tr>
+    <th>Structure</th>
+    <th>Stores</th>
+    <th>Duplicates</th>
+    <th>Access</th>
+  </tr>
+  <tr>
+    <td>List</td>
+    <td>Values</td>
+    <td>Allowed</td>
+    <td>Index</td>
+  </tr>
+  <tr>
+    <td>Set</td>
+    <td>Unique Values</td>
+    <td>Not Allowed</td>
+    <td>No Index</td>
+  </tr>
+  <tr>
+    <td>Dictionary</td>
+    <td>Key–Value</td>
+    <td>Keys Unique</td>
+    <td>Key</td>
+  </tr>
+</table>
+
+<hr>
+
+<h3>📌 Use Case</h3>
+<p>
+Dictionaries are commonly used when:
+</p>
+<ul>
+  <li>Data needs meaningful keys</li>
+  <li>Fast lookup is required</li>
+  <li>Structured data representation is needed</li>
+</ul>
+
+<pre>
+employee = {
+  "id": 101,
+  "name": "Ram",
+  "role": "Developer"
+}
+</pre>
 
 
 
