@@ -141,28 +141,21 @@ print("Python comments example")
 <p><strong>Example:</strong><br>
 <code>print("Hello Python")</code></p>
 
-<hr>
 
 <h3>2. Printing Numbers</h3>
 <p><strong>Purpose:</strong> To show numeric values or results of calculations.</p>
 <p><strong>Example:</strong><br>
 <code>print(10 + 20)</code></p>
 
-<hr>
-
 <h3>3. Printing Multiple Values</h3>
 <p><strong>Purpose:</strong> To print different items in one line separated by space (default).</p>
 <p><strong>Example:</strong><br>
 <code>print("Age:", 20)</code></p>
 
-<hr>
-
 <h3>4. Using <code>sep</code> (Separator)</h3>
 <p><strong>Purpose:</strong> To change the separator between printed values. Default is a space.</p>
 <p><strong>Example:</strong><br>
 <code>print(1, 2, 3, sep="-")</code></p>
-
-<hr>
 
 <h3>5. Using <code>end</code> (Ending Character)</h3>
 <p><strong>Purpose:</strong> To change what happens at the end of a print statement. Default is a new line.</p>
@@ -172,7 +165,6 @@ print("Hello", end=" ")<br>
 print("World")
 </code></p>
 
-<hr>
 
 <h3>6. Printing Variables</h3>
 <p><strong>Purpose:</strong> To display the values stored inside variables.</p>
@@ -182,8 +174,6 @@ name = "C"<br>
 print(name)
 </code></p>
 
-<hr>
-
 <h3>7. f-Strings</h3>
 <p><strong>Purpose:</strong> To format strings easily and include variables inside text.</p>
 <p><strong>Example:</strong><br>
@@ -191,8 +181,6 @@ print(name)
 name = "C"<br>
 print(f"My name is {name}")
 </code></p>
-
-<hr>
 
 <h3>8. Escape Characters</h3>
 <p><strong>Purpose:</strong> To format text with special characters like new line, tab, etc.</p>
@@ -202,7 +190,7 @@ print("Hello\nPython")  &nbsp;&nbsp;# New line <br>
 print("Hello\tPython")  &nbsp;&nbsp;# Tab space
 </code></p>
 
-
+<hr>
 <h2>Variables in Python</h2>
 
 <p>
@@ -281,6 +269,7 @@ A variable is like a container that stores data. Instead of typing the same valu
         <li>Makes programs flexible</li>
     </ol>
 </div>
+<hr>
 <h2>Data Types in Python</h2>
 
 <h3>➡️ What is a Data Type?</h3>
@@ -495,7 +484,7 @@ l = [1, 2, 2, 3]
 s = set(l)       # {1, 2, 3}
 </code>
 </pre>
-
+<hr>
 <h2>Python Operators</h2>
 <p> Operators are special symbols in Python used to perform operations on variables and values. Python has several types of operators:</p>
 
@@ -596,7 +585,7 @@ s = set(l)       # {1, 2, 3}
 <p><strong>Purpose:</strong> Shifts bits to the right. Equivalent to integer division by 2ⁿ.</p>
 <p><strong>Example:</strong> 5 >> 1</p>
 <p>Binary: 5 → 101 → Shift right → 10 → Result: 2</p>
-
+<hr>
 <h2>Python Libraries</h2>
 
 <p>A <strong>library</strong> is a collection of modules, and a <strong>module</strong> is a file containing Python definitions and functions. Libraries help you perform specific tasks without writing code from scratch.</p>
@@ -644,7 +633,7 @@ print(math.sqrt(25))     # Square root → 5.0
 print(math.factorial(5)) # Factorial → 120
 print(math.pi)           # Pi value → 3.141592653589793
 </code></pre>
-
+<hr>
 <h2>Built-in Functions in Python</h2>
 
 <p>Built-in functions are functions available by default in Python. You don’t need to import any library to use them.</p>
@@ -693,8 +682,8 @@ print(min(numbers))       # 10
 print(sorted(numbers))    # [10, 20, 30]
 print(abs(-50))           # 50
 </code></pre>
-
-<h1>📝 Strings in Python</h1>
+<hr>
+<h1> Strings in Python</h1>
 
 <p>A string is a sequence of characters enclosed in:</p>
 
@@ -706,7 +695,6 @@ print(abs(-50))           # 50
 
 <p>Strings are used to store text data like names, messages, etc.</p>
 
-<hr>
 
 <h2>✔️ Creating Strings</h2>
 
@@ -717,8 +705,6 @@ a multiline
 string'''
 </code></pre>
 
-<hr>
-
 <h2>✔️ Accessing Characters (Indexing)</h2>
 
 <p>Each character has a position (index).</p>
@@ -728,8 +714,6 @@ print(name[0])   # C
 print(name[3])   # i
 print(name[-1])  # u  (negative index → from last)
 </code></pre>
-
-<hr>
 
 <h2>✔️ Slicing Strings</h2>
 
@@ -745,16 +729,12 @@ print(text[-3:])   # hon
 
 <p>Once a string is created, you cannot change (modify) it directly.</p>
 
-<hr>
-
 <h3>🔹 Example</h3>
 
 <pre><code>name = "Chaithu"
 name = "J" + name[1:]
 print(name)
 </code></pre>
-
-<hr>
 
 <h3>🔍 Step-by-step Explanation</h3>
 
@@ -769,7 +749,6 @@ print(name)
 <pre><code>Jhaithu
 </code></pre>
 
-<hr>
 
 <h3>❌ Immutable Example (Error)</h3>
 
@@ -782,8 +761,6 @@ name[0] = "J"     # ❌ Error: strings are immutable
 <pre><code>TypeError: 'str' object does not support item assignment
 </code></pre>
 
-<hr>
-
 <h3>✔️ What Actually Happens?</h3>
 
 <p>If you try to “change” a string, Python creates a new string instead of modifying the old one.</p>
@@ -793,7 +770,6 @@ name = "J" + name[1:]
 print(name)    # Jhaithu
 </code></pre>
 
-<hr>
 <h1> Important String Methods in Python</h1>
 
 <h3> 1. upper()</h3>
@@ -918,7 +894,7 @@ print(name)    # Jhaithu
 <pre><code>"Hello".swapcase()
 # Output: "hELLO"
 </code></pre>
-
+<hr>
 <h1> Python Lists </h1>
 
 <h3>1.What is a List?</h3>
@@ -1131,7 +1107,7 @@ matrix = [
 print(matrix[0])      # [1,2,3]
 print(matrix[1][2])   # 6
 </pre>
-
+<hr>
 <h1> Python Tuple </h1>
 <h3> 1. What is a Tuple?</h3>
 <p>
@@ -1286,7 +1262,7 @@ Key differences between tuples and lists:
 <li>Tuples can be used as dictionary keys, lists cannot</li>
 <li>Lists are better when data needs frequent modification</li>
 </ul>
-
+<hr>
 <h1> Python Sets </h1>
 
 <h3> 1. What is a Set?</h3>
@@ -1487,14 +1463,12 @@ print(st)   # {1, 2}
   <li>You need <b>fast membership checking</b></li>
   <li>You want to perform <b>mathematical set operations</b> like union and intersection</li>
 </ul>
-
+<hr>
 <h1> Python Dictionary</h1>
 <p>
 A <b>dictionary</b> in Python is a collection that stores data in <b>key–value pairs</b>.
 It is widely used to represent structured and meaningful data.
 </p>
-
-<hr>
 
 <h3> 1. What is a Dictionary?</h3>
 <p>
@@ -1505,8 +1479,6 @@ Each key maps to a value, allowing fast access.
 <pre>
 student = {"name": "Chaithu", "age": 22, "course": "Python"}
 </pre>
-
-<hr>
 
 <h3> 2. Creating a Dictionary</h3>
 <p>
@@ -1519,7 +1491,6 @@ d2 = dict(name="Python", version=3.12)
 empty_dict = {}
 </pre>
 
-<hr>
 
 <h3> 3. Dictionary Structure (Key–Value)</h3>
 <p>
@@ -1538,8 +1509,6 @@ data = {
 }
 </pre>
 
-<hr>
-
 <h3> 4. Accessing Dictionary Values</h3>
 <p>
 The purpose of accessing values is to retrieve data using keys.
@@ -1550,8 +1519,6 @@ student = {"name": "Chaithu", "age": 22}
 print(student["name"])      # Chaithu
 print(student.get("age"))   # 22
 </pre>
-
-<hr>
 
 <h3> 5. Dictionaries are Mutable</h3>
 <p>
@@ -1564,7 +1531,6 @@ d["b"] = 200
 print(d)
 </pre>
 
-<hr>
 
 <h3> 6. Adding Elements</h3>
 <p>
@@ -1577,7 +1543,6 @@ d["b"] = 2
 print(d)
 </pre>
 
-<hr>
 
 <h3> 7. Removing Elements</h3>
 <p>
@@ -1591,8 +1556,6 @@ del d["b"]
 print(d)
 </pre>
 
-<hr>
-
 <h3> 8. Dictionary Methods</h3>
 <p>
 The purpose of dictionary methods is to work with keys and values efficiently.
@@ -1605,8 +1568,6 @@ print(d.values())
 print(d.items())
 </pre>
 
-<hr>
-
 <h3> 9. Iterating Through a Dictionary</h3>
 <p>
 The purpose of iteration is to process each key and value.
@@ -1616,8 +1577,6 @@ The purpose of iteration is to process each key and value.
 for key, value in d.items():
     print(key, value)
 </pre>
-
-<hr>
 
 <h3> 10. Checking Membership</h3>
 <p>
@@ -1630,7 +1589,6 @@ print("a" in d)
 print("x" not in d)
 </pre>
 
-<hr>
 
 <h3> 11. Copying Dictionaries</h3>
 <p>
@@ -1641,8 +1599,6 @@ The purpose of copying is to duplicate dictionary data safely.
 a = {"x": 1}
 b = a.copy()
 </pre>
-
-<hr>
 
 <h3> 12. Nested Dictionaries</h3>
 <p>
@@ -1659,8 +1615,6 @@ student = {
 }
 print(student["marks"]["python"])
 </pre>
-
-<hr>
 
 <h3> 13. Dictionary vs List vs Set</h3>
 <p>
@@ -1694,8 +1648,6 @@ The purpose of comparison is to understand when to use dictionaries.
   </tr>
 </table>
 
-<hr>
-
 <h3>📌 Use Case</h3>
 <p>
 Dictionaries are commonly used when:
@@ -1713,11 +1665,494 @@ employee = {
   "role": "Developer"
 }
 </pre>
+<hr>
+
+<h1>2. Intermediate Python</h1>
+<h2> Python Control Statements</h2>
+
+<p>
+Control statements are used to <b>control the flow of execution</b> of a program.
+They decide <b>which statement runs</b>, <b>how many times it runs</b>, or <b>when it stops</b>.
+</p>
+<h3> Types of Control Statements in Python</h3>
+
+<ul>
+  <li><b>Conditional Statements</b> – Decision making</li>
+  <li><b>Looping Statements</b> – Repeating execution</li>
+  <li><b>Jump Statements</b> – Transfer control</li>
+</ul>
+
+<h2>1. Conditional Statements in Python</h2>
+<p>
+Conditional statements are used to make decisions in a program.
+They allow the program to execute different blocks of code based on conditions.
+</p>
+
+<h3> What are Conditional Statements?</h3>
+<p>
+The purpose of conditional statements is to control the flow of execution.
+Based on a condition (True or False), Python decides which code to run.
+</p>
+
+<pre>
+age = 18
+if age >= 18:
+    print("Eligible to vote")
+</pre>
+<h3> 1. if Statement</h3>
+
+<p>
+<b>Use Case:</b> Execute a block of code only when a condition is True.
+</p>
+
+<p><b>Syntax:</b></p>
+<pre>
+if condition:
+    statement(s)
+</pre>
+
+<p><b>Example:</b></p>
+<pre>
+x = 10
+
+if x > 5:
+    print("x is greater than 5")
+</pre>
+
+<h3> 2. if-else Statement</h3>
+
+<p>
+<b>Use Case:</b> Choose between two blocks of code based on a condition.
+</p>
+
+<p><b>Syntax:</b></p>
+<pre>
+if condition:
+    statement(s)
+else:
+    statement(s)
+</pre>
+
+<p><b>Example:</b></p>
+<pre>
+age = 16
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+</pre>
+
+<h3> 3. if-elif-else Statement</h3>
+
+<p>
+<b>Use Case:</b> Check multiple conditions one after another.
+</p>
+
+<p><b>Syntax:</b></p>
+<pre>
+if condition1:
+    statement(s)
+elif condition2:
+    statement(s)
+elif condition3:
+    statement(s)
+else:
+    statement(s)
+</pre>
+
+<p><b>Example:</b></p>
+<pre>
+marks = 75
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+else:
+    print("Fail")
+</pre>
+
+<h3> 4. Nested if Statement</h3>
+
+<p>
+<b>Use Case:</b> Place one conditional statement inside another.
+</p>
+
+<p><b>Syntax:</b></p>
+<pre>
+if condition1:
+    if condition2:
+        statement(s)
+    else:
+        statement(s)
+else:
+    statement(s)
+</pre>
+
+<p><b>Example:</b></p>
+<pre>
+num = 10
+
+if num > 0:
+    if num % 2 == 0:
+        print("Positive Even Number")
+    else:
+        print("Positive Odd Number")
+else:
+    print("Negative Number")
+</pre>
+
+
+<h3>5. Comparison Operators in Conditions</h3>
+<p>
+The purpose of comparison operators is to compare values in conditions.
+</p>
+
+<ul>
+  <li><b>==</b> Equal to</li>
+  <li><b>!=</b> Not equal to</li>
+  <li><b>&gt;</b> Greater than</li>
+  <li><b>&lt;</b> Less than</li>
+  <li><b>&gt;=</b> Greater than or equal to</li>
+  <li><b>&lt;=</b> Less than or equal to</li>
+</ul>
+
+<pre>
+a = 10
+b = 20
+if a != b:
+    print("Not equal")
+</pre>
+
+<h3> 6. Logical Operators</h3>
+<p>
+The purpose of logical operators is to combine multiple conditions.
+</p>
+
+<ul>
+  <li><b>and</b> – True if all conditions are True</li>
+  <li><b>or</b> – True if any one condition is True</li>
+  <li><b>not</b> – Reverses the condition</li>
+</ul>
+
+<pre>
+age = 25
+if age >= 18 and age <= 30:
+    print("Eligible age group")
+</pre>
+
+<h3> 7. Short-hand if (Ternary Operator)</h3>
+<p>
+The purpose of short-hand if is to write simple conditions in one line.
+</p>
+
+<pre>
+a = 10
+b = 20
+print("a is greater") if a > b else print("b is greater")
+</pre>
+
+<h3>8. Using input() with Conditions</h3>
+<p>
+The purpose of using <b>input()</b> is to take dynamic values from the user.
+</p>
+
+<pre>
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+</pre>
+
+<h3>📌 Use Case</h3>
+<p>
+Conditional statements are commonly used when:
+</p>
+
+<ul>
+  <li>Validating user input</li>
+  <li>Decision making (pass/fail, eligibility)</li>
+  <li>Menu-driven programs</li>
+  <li>Authentication and authorization logic</li>
+</ul>
+<hr>
+<h2>2. Python Looping Statements</h2>
+<p>
+Looping statements are used to <b>execute a block of code repeatedly</b>
+until a condition is satisfied.
+</p>
+<h3> Types of Looping Statements</h3>
+
+<ul>
+  <li><b>for loop</b></li>
+  <li><b>while loop</b></li>
+  <li><b>Nested loops</b></li>
+</ul>
+
+<h3> 1. for Loop</h3>
+
+<h3>Purpose</h3>
+<p>
+Used to iterate over a sequence such as list, tuple, string, range, etc.
+</p>
+
+<h3>Syntax</h3>
+<pre>
+for variable in sequence:
+    statement(s)
+</pre>
+
+<h3>Example</h3>
+<pre>
+for i in range(1, 6):
+    print(i)
+</pre>
+
+<h3> 2. while Loop</h3>
+
+<h3>Purpose</h3>
+<p>
+Used when the number of iterations is not known in advance.
+</p>
+
+<h3>Syntax</h3>
+<pre>
+while condition:
+    statement(s)
+</pre>
+
+<h3>Example</h3>
+<pre>
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+</pre>
+
+<h3> 3. Nested Loops</h3>
+
+<h3>Purpose</h3>
+<p>
+A loop inside another loop. Used for matrices, patterns, tables, etc.
+</p>
+
+<h3>Syntax</h3>
+<pre>
+for variable1 in sequence1:
+    for variable2 in sequence2:
+        statement(s)
+</pre>
+
+<h3>Example</h3>
+<pre>
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+</pre>
+
+<h3>✔️ else with Loops</h3>
+
+<h3>Purpose</h3>
+<p>
+The <b>else</b> block executes after the loop completes normally
+(not terminated by <b>break</b>).
+</p>
+
+<h3>Syntax</h3>
+<pre>
+for variable in sequence:
+    statement(s)
+else:
+    statement(s)
+</pre>
+
+<h3>Example</h3>
+<pre>
+for i in range(1, 4):
+    print(i)
+else:
+    print("Loop completed successfully")
+</pre>
+
+<h3> Use Case of Looping Statements</h3>
+
+<ul>
+  <li>To repeat a block of code multiple times</li>
+  <li>To iterate through lists, tuples, sets, dictionaries, and strings</li>
+  <li>To generate number series and patterns</li>
+  <li>To process user input repeatedly</li>
+  <li>To traverse data structures like matrices and tables</li>
+  <li>To automate repetitive tasks</li>
+</ul>
+
+<hr>
+
+<h2>3.Jump Statements</h2>
+
+<p>
+Jump statements are used to <b>transfer control of execution</b> from one part of the program to another.
+They change the normal flow of loops.
+</p>
+
+<h3> Types of Jump Statements</h3>
+
+<ul>
+  <li><b>break</b></li>
+  <li><b>continue</b></li>
+  <li><b>pass</b></li>
+</ul>
+
+<h3>1. break Statement</h3>
+
+<h3>Purpose</h3>
+<p>
+Used to terminate the loop immediately when a condition is met.
+</p>
+
+<h3>Syntax</h3>
+<pre>
+break
+</pre>
+
+<h3>Example</h3>
+<pre>
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+</pre>
+
+
+<h3> 2. continue Statement</h3>
+
+<h3>Purpose</h3>
+<p>
+Used to skip the current iteration and continue with the next iteration.
+</p>
+
+<h3>Syntax</h3>
+<pre>
+continue
+</pre>
+
+<h3>Example</h3>
+<pre>
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+</pre>
+
+<h3> 3. pass Statement</h3>
+
+<h3>Purpose</h3>
+<p>
+Used as a placeholder where a statement is syntactically required but no action is needed.
+</p>
+
+<h3>Syntax</h3>
+<pre>
+pass
+</pre>
+
+<h3>Example</h3>
+<pre>
+for i in range(3):
+    pass
+</pre>
+
+
+<h3> Use Case of Jump Statements</h3>
+
+<ul>
+  <li>To stop a loop based on a condition</li>
+  <li>To skip unwanted values during iteration</li>
+  <li>To create empty blocks for future implementation</li>
+  <li>To control program flow efficiently</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </body>     
-<hr>
+
 <h2>👨‍💻 Author</h2>
 
 <p><strong>Chaithanya Gollapalli</strong><br>
